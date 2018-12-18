@@ -20,7 +20,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|center_horizontal"
         android:layout_margin="@dimen/fab_margin"
-        android:backgroundTint="@color/colorPrimary"
         android:tint="@android:color/white"
         app:srcCompat="@android:drawable/ic_input_add" />
 

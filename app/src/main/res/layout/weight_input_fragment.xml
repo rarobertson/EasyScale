@@ -5,10 +5,11 @@
     android:orientation="vertical">
 
     <LinearLayout
+        android:id="@+id/date"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="10dp"
-        android:paddingLeft="10dp">
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp">
 
         <TextView
             android:id="@+id/dateTitleWeight"
@@ -27,22 +28,23 @@
             android:inputType="date" />
 
         <DatePicker
+            android:id="@+id/datePickerWeight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:endYear="2100"
             android:startYear="1900"
-            android:id="@+id/datePickerWeight"
             android:visibility="gone">
 
         </DatePicker>
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/weight"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:paddingTop="10dp"
-        android:paddingLeft="10dp">
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp">
 
         <TextView
             android:id="@+id/weightTitle"
@@ -58,6 +60,28 @@
             android:layout_weight="1"
             android:ems="14"
             android:inputType="numberDecimal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/picture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/pictureProgress"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="Photos" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:src="@android:drawable/ic_menu_camera"/>
     </LinearLayout>
 
 
